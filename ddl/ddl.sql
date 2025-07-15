@@ -15,7 +15,7 @@ CREATE TABLE subdivisioncategories (
 
 CREATE TABLE stateregions (
     code VARCHAR(6) PRIMARY KEY,
-    name VARCHAR(60) UNIQUE,
+    name VARCHAR(60),
     country_id VARCHAR(6),
     code3166 VARCHAR(10) UNIQUE,
     subdivision_id INT(11),
@@ -25,7 +25,7 @@ CREATE TABLE stateregions (
 
 CREATE TABLE citiesormunicipalities (
     code VARCHAR(6) PRIMARY KEY,
-    name VARCHAR(60) UNIQUE,
+    name VARCHAR(60),
     statereg_id VARCHAR(6),
     FOREIGN KEY (statereg_id) REFERENCES stateregions(code)
 );
