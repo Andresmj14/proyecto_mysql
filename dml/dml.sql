@@ -244,11 +244,103 @@ VALUES ('Afganistán', 'AF', 'AFG', '4'),
 ('Yibuti', 'DJ', 'DJI', '262'),
 ('Zambia', 'ZM', 'ZMB', '894'),
 ('Zimbabwe', 'ZW', 'ZWE', '716');
---
+
 INSERT INTO subdivisioncategories (description) 
 VALUES ('departament'),('capital district'),('state'),('district'),('outlying area');
 
-INSERT INTO citiesormunicipalities (name, statereg_id) VALUES
+INSERT INTO stateregions(code, name, country_id, code3166, subdivision_id) VALUES
+('CO-AMA', 'Amazonas', '170', 'CO-AMA', 1),
+('CO-ANT', 'Antioquia', '170', 'CO-ANT', 1),
+('CO-ARA', 'Arauca', '170', 'CO-ARA', 1),
+('CO-ATL', 'Atlántico', '170', 'CO-ATL', 1),
+('CO-BOL', 'Bolívar', '170', 'CO-BOL', 1),
+('CO-BOY', 'Boyacá', '170', 'CO-BOY', 1),
+('CO-CAL', 'Caldas', '170', 'CO-CAL', 1),
+('CO-CAQ', 'Caquetá', '170', 'CO-CAQ', 1),
+('CO-CAS', 'Casanare', '170', 'CO-CAS', 1),
+('CO-CAU', 'Cauca', '170', 'CO-CAU', 1),
+('CO-CES', 'Cesar', '170', 'CO-CES', 1),
+('CO-CHO', 'Chocó', '170', 'CO-CHO', 1),
+('CO-CUN', 'Cundinamarca', '170', 'CO-CUN', 1),
+('CO-COR', 'Córdoba', '170', 'CO-COR', 1),
+('CO-DC', 'Distrito Capital de Bogotá', '170', 'CO-DC', 2),
+('CO-GUA', 'Guainía', '170', 'CO-GUA', 1),
+('CO-GUV', 'Guaviare', '170', 'CO-GUV', 1),
+('CO-HUI', 'Huila', '170', 'CO-HUI', 1),
+('CO-LAG', 'La Guajira', '170', 'CO-LAG', 1),
+('CO-MAG', 'Magdalena', '170', 'CO-MAG', 1),
+('CO-MET', 'Meta', '170', 'CO-MET', 1),
+('CO-NAR', 'Nariño', '170', 'CO-NAR', 1),
+('CO-NSA', 'Norte de Santander', '170', 'CO-NSA', 1),
+('CO-PUT', 'Putumayo', '170', 'CO-PUT', 1),
+('CO-QUI', 'Quindío', '170', 'CO-QUI', 1),
+('CO-RIS', 'Risaralda', '170', 'CO-RIS', 1),
+('CO-SAP', 'San Andrés, Providencia y Santa Catalina', '170', 'CO-SAP', 1),
+('CO-SAN', 'Santander', '170', 'CO-SAN', 1),
+('CO-SUC', 'Sucre', '170', 'CO-SUC', 1),
+('CO-TOL', 'Tolima', '170', 'CO-TOL', 1),
+('CO-VAC', 'Valle del Cauca', '170', 'CO-VAC', 1),
+('CO-VAU', 'Vaupés', '170', 'CO-VAU', 1),
+('CO-VID', 'Vichada', '170', 'CO-VID', 1),
+('US-AL', 'Alabama', '840', 'US-AL', 3),
+('US-AK', 'Alaska', '840', 'US-AK', 3),
+('US-AS', 'American Samoa', '840', 'US-AS', 5),
+('US-AZ', 'Arizona', '840', 'US-AZ', 3),
+('US-AR', 'Arkansas', '840', 'US-AR', 3),
+('US-CA', 'California', '840', 'US-CA', 3),
+('US-CO', 'Colorado', '840', 'US-CO', 3),
+('US-CT', 'Connecticut', '840', 'US-CT', 3),
+('US-DE', 'Delaware', '840', 'US-DE', 3),
+('US-DC', 'District of Columbia', '840', 'US-DC', 2),
+('US-FL', 'Florida', '840', 'US-FL', 3),
+('US-GA', 'Georgia', '840', 'US-GA', 3),
+('US-GU', 'Guam', '840', 'US-GU', 5),
+('US-HI', 'Hawaii', '840', 'US-HI', 3),
+('US-ID', 'Idaho', '840', 'US-ID', 3),
+('US-IL', 'Illinois', '840', 'US-IL', 3),
+('US-IN', 'Indiana', '840', 'US-IN', 3),
+('US-IA', 'Iowa', '840', 'US-IA', 3),
+('US-KS', 'Kansas', '840', 'US-KS', 3),
+('US-KY', 'Kentucky', '840', 'US-KY', 3),
+('US-LA', 'Louisiana', '840', 'US-LA', 3),
+('US-ME', 'Maine', '840', 'US-ME', 3),
+('US-MD', 'Maryland', '840', 'US-MD', 3),
+('US-MA', 'Massachusetts', '840', 'US-MA', 3),
+('US-MI', 'Michigan', '840', 'US-MI', 3),
+('US-MN', 'Minnesota', '840', 'US-MN', 3),
+('US-MS', 'Mississippi', '840', 'US-MS', 3),
+('US-MO', 'Missouri', '840', 'US-MO', 3),
+('US-MT', 'Montana', '840', 'US-MT', 3),
+('US-NE', 'Nebraska', '840', 'US-NE', 3),
+('US-NV', 'Nevada', '840', 'US-NV', 3),
+('US-NH', 'New Hampshire', '840', 'US-NH', 3),
+('US-NJ', 'New Jersey', '840', 'US-NJ', 3),
+('US-NM', 'New Mexico', '840', 'US-NM', 3),
+('US-NY', 'New York', '840', 'US-NY', 3),
+('US-NC', 'North Carolina', '840', 'US-NC', 3),
+('US-ND', 'North Dakota', '840', 'US-ND', 3),
+('US-MP', 'Northern Mariana Islands', '840', 'US-MP', 5),
+('US-OH', 'Ohio', '840', 'US-OH', 3),
+('US-OK', 'Oklahoma', '840', 'US-OK', 3),
+('US-OR', 'Oregon', '840', 'US-OR', 3),
+('US-PA', 'Pennsylvania', '840', 'US-PA', 3),
+('US-PR', 'Puerto Rico', '840', 'US-PR', 5),
+('US-RI', 'Rhode Island', '840', 'US-RI', 3),
+('US-SC', 'South Carolina', '840', 'US-SC', 3),
+('US-SD', 'South Dakota', '840', 'US-SD', 3),
+('US-TN', 'Tennessee', '840', 'US-TN', 3),
+('US-TX', 'Texas', '840', 'US-TX', 3),
+('US-UM', 'United States Minor Outlying Islands', '840', 'US-UM', 5),
+('US-UT', 'Utah', '840', 'US-UT', 3),
+('US-VT', 'Vermont', '840', 'US-VT', 3),
+('US-VI', 'Virgin Islands, U.S.', '840', 'US-VI', 5),
+('US-VA', 'Virginia', '840', 'US-VA', 3),
+('US-WA', 'Washington', '840', 'US-WA', 3),
+('US-WV', 'West Virginia', '840', 'US-WV', 3),
+('US-WI', 'Wisconsin', '840', 'US-WI', 3),
+('US-WY', 'Wyoming', '840', 'US-WY', 3);
+
+INSERT INTO citiesormunicipalities (code, name, statereg_id) VALUES
 -- Amazonas (CO-AMA)
 ('1', 'LETICIA', 'CO-AMA'),
 ('2', 'EL ENCANTO', 'CO-AMA'),
@@ -716,3 +808,696 @@ INSERT INTO citiesormunicipalities (name, statereg_id) VALUES
 ('402', 'LA PRIMAVERA', 'CO-VID'),
 ('403', 'SANTA ROSALIA', 'CO-VID'),
 ('404', 'CUMARIBO', 'CO-VID');
+
+
+
+INSERT INTO typesofidentifications (description, suffix) VALUES
+('Cédula de Ciudadanía', 'CC'),
+('Tarjeta de Identidad', 'TI'),
+('Cédula de Extranjería', 'CE'),
+('Pasaporte', 'PAS'),
+('Registro Civil', 'RC'),
+('Número de Identificación Tributaria', 'NIT'),
+('Documento Nacional de Identidad (Extranjero)', 'DNI'),
+('Permiso Especial de Permanencia', 'PEP'),
+('Carné Diplomático', 'CD'),
+('Salvoconducto', 'SC'),
+('Permiso por Protección Temporal', 'PPT'),
+('Número Único de Identificación Personal', 'NUIP'),
+('Tarjeta de Extranjería', 'TE'),
+('Cédula de Identidad', 'CI'),
+('Documento de Identificación Extranjero', 'DIE');
+
+INSERT INTO categories (description) VALUES
+('Alimentos y Bebidas'),
+('Ropa y Accesorios'),
+('Electrónica'),
+('Hogar y Decoración'),
+('Salud y Belleza'),
+('Deportes y Fitness'),
+('Juguetes y Juegos'),
+('Libros y Papelería'),
+('Automotriz'),
+('Mascotas'),
+('Construcción y Ferretería'),
+('Jardinería'),
+('Tecnología y Software'),
+('Servicios Profesionales'),
+('Arte y Artesanías'),
+('Música e Instrumentos'),
+('Viajes y Turismo'),
+('Educación y Cursos'),
+('Oficina y Negocios'),
+('Bebés y Niños'),
+('Joyas y Relojes'),
+('Farmacias y Medicamentos'),
+('Restaurantes y Comida Rápida'),
+('Supermercados'),
+('Servicios Financieros');
+
+INSERT INTO audiences (description) VALUES
+('Todos los públicos'),
+('Niños'),
+('Jóvenes'),
+('Adultos'),
+('Personas mayores'),
+('Hombres'),
+('Mujeres'),
+('Familias'),
+('Profesionales'),
+('Empresas'),
+('Estudiantes'),
+('Deportistas'),
+('Mascotas'),
+('Usuarios premium'),
+('Clientes ocasionales'),
+('Clientes frecuentes'),
+('Nuevos clientes'),
+('Usuarios finales'),
+('Distribuidores'),
+('Mayoristas'),
+('Minoristas'),
+('Sector salud'),
+('Sector educativo'),
+('Sector tecnológico'),
+('Sector financiero'),
+('Sector industrial'),
+('Sector servicios'),
+('Sector gobierno'),
+('Organizaciones sin ánimo de lucro'),
+('Comunidades');
+
+INSERT INTO companies (id, type_id, name, category_id, city_id, audience_id, cellphone, email) VALUES
+-- Bogotá companies (assuming '190' is Bogotá code from previous data)
+('COMP001', 1, 'Almacén La Economía', 1, '190', 1, '6012345678', 'contacto@economia.com'),
+('COMP002', 6, 'TechSolutions SAS', 13, '190', 11, '6019876543', 'ventas@techsolutions.co'),
+('COMP003', 1, 'Farmacia La Salud', 22, '190', 7, '6015551234', 'servicio@farmaciasalud.com'),
+
+-- Medellín companies (assuming '10' is Medellín code)
+('COMP004', 1, 'Moda Elegante', 2, '10', 8, '6048765432', 'info@modaelegante.com'),
+('COMP005', 6, 'Constructora Andina', 11, '10', 9, '6043216549', 'proyectos@constructoraandina.com'),
+
+-- Cali companies (assuming '380' is Cali code)
+('COMP006', 1, 'Supermercado El Ahorro', 24, '380', 1, '6023456789', 'atencion@elahorro.com'),
+('COMP007', 6, 'Academia Digital', 18, '380', 11, '6029871234', 'info@academiadigital.edu'),
+
+-- Barranquilla companies (assuming '25' is Barranquilla code)
+('COMP008', 1, 'Muebles Caribe', 4, '25', 1, '6051234567', 'ventas@mueblescaribe.com'),
+('COMP009', 6, 'Distribuidora Atlántico', 19, '25', 20, '6057654321', 'admin@distatlantico.com'),
+
+-- Cartagena companies (assuming '40' is Cartagena code)
+('COMP010', 1, 'Hotel Playa Blanca', 17, '40', 29, '6059871234', 'reservas@playablanca.com'),
+('COMP011', 6, 'Pesca y Mariscos SA', 1, '40', 1, '6054567890', 'ventas@pescaymariscos.com');
+
+INSERT INTO customers (name, city_id, audience_id, cellphone, email, address) VALUES
+-- Bogotá customers (city_id = '190')
+('María González', '190', 4, '3112345678', 'maria.gonzalez@email.com', 'Carrera 15 #88-64'),
+('Carlos Rodríguez', '190', 5, '3123456789', 'carlos.rodriguez@email.com', 'Calle 127 #45-32'),
+('Ana Martínez', '190', 8, '3134567890', 'ana.martinez@email.com', 'Avenida 19 #120-15'),
+
+-- Medellín customers (city_id = '10')
+('Jorge Ramírez', '10', 5, '3145678901', 'jorge.ramirez@email.com', 'Carrera 43A #7-95'),
+('Laura Sánchez', '10', 8, '3156789012', 'laura.sanchez@email.com', 'Calle 10 #35-22'),
+
+-- Cali customers (city_id = '380')
+('David López', '380', 5, '3167890123', 'david.lopez@email.com', 'Avenida 6N #15-46'),
+('Sofía Pérez', '380', 4, '3178901234', 'sofia.perez@email.com', 'Calle 70 #5-40'),
+
+-- Barranquilla customers (city_id = '25')
+('Pedro Gómez', '25', 5, '3189012345', 'pedro.gomez@email.com', 'Carrera 52 #82-30'),
+('Luisa Díaz', '25', 8, '3201234567', 'luisa.diaz@email.com', 'Calle 84 #45-12'),
+
+-- Cartagena customers (city_id = '40')
+('Andrés Herrera', '40', 5, '3212345678', 'andres.herrera@email.com', 'Avenida Pedro de Heredia #25-30'),
+('Camila Castro', '40', 4, '3223456789', 'camila.castro@email.com', 'Calle del Arsenal #10-15');
+
+INSERT INTO products (name, detail, price, category_id, image) VALUES
+-- Alimentos y Bebidas (category_id = 1)
+('Café Premium 500g', 'Café 100% colombiano tostado medio, grano entero', 12500.00, 1, 'cafe-premium.jpg'),
+('Miel Natural 250g', 'Miel pura de abejas sin aditivos ni conservantes', 9800.00, 1, 'miel-natural.jpg'),
+
+-- Ropa y Accesorios (category_id = 2)
+('Camiseta Algodón M', 'Camiseta básica 100% algodón, varios colores', 24900.00, 2, 'camiseta-algodon.jpg'),
+('Jeans Slim Fit', 'Pantalón jean ajustado, color azul oscuro', 89900.00, 2, 'jeans-slim.jpg'),
+
+-- Electrónica (category_id = 3)
+('Audífonos Bluetooth', 'Audífonos inalámbricos con cancelación de ruido', 159900.00, 3, 'audifonos-bluetooth.jpg'),
+('Power Bank 10000mAh', 'Batería portátil para carga rápida de dispositivos', 45900.00, 3, 'powerbank.jpg'),
+
+-- Hogar y Decoración (category_id = 4)
+('Juego de Sábanas', 'Juego de sábanas 600 hilos, algodón egipcio', 78900.00, 4, 'sabanas-algodon.jpg'),
+('Lámpara Moderna', 'Lámpara de mesa LED con 3 niveles de intensidad', 65400.00, 4, 'lampara-led.jpg'),
+
+-- Salud y Belleza (category_id = 5)
+('Crema Hidratante', 'Crema facial con ácido hialurónico y vitamina E', 32900.00, 5, 'crema-hidratante.jpg'),
+('Kit Maquillaje Profesional', 'Incluye 12 sombras, 2 labiales y brochas', 112900.00, 5, 'kit-maquillaje.jpg'),
+
+-- Deportes y Fitness (category_id = 6)
+('Yoga Mat', 'Mat para yoga antideslizante, 6mm grosor', 42900.00, 6, 'yoga-mat.jpg'),
+('Mancuernas 5kg', 'Par de mancuernas de neopreno, ergonómicas', 75900.00, 6, 'mancuernas-5kg.jpg'),
+
+-- Libros y Papelería (category_id = 8)
+('Libro: Cien Años de Soledad', 'Edición especial aniversario, tapa dura', 45900.00, 8, 'cien-anos-soledad.jpg'),
+('Cuaderno Profesional', 'Cuaderno rayado 200 hojas, pasta dura', 12900.00, 8, 'cuaderno-profesional.jpg'),
+
+-- Mascotas (category_id = 10)
+('Alimento Perro Adulto', 'Alimento premium para perros adultos 3kg', 35900.00, 10, 'alimento-perro.jpg'),
+('Juguete para Gatos', 'Varita con plumas y campana, estimulación felina', 8900.00, 10, 'juguete-gato.jpg'),
+
+-- Tecnología y Software (category_id = 13)
+('Antivirus 1 Año', 'Licencia para 3 dispositivos, protección completa', 89900.00, 13, 'antivirus.jpg'),
+('Curso Programación Web', 'Acceso 6 meses a plataforma de aprendizaje', 149900.00, 13, 'curso-programacion.jpg');
+
+INSERT INTO products (name, detail, price, category_id, image) VALUES
+-- Products for Almacén La Economía (COMP001 - Supermarket)
+('Arroz Superior 1kg', 'Arroz grano largo, variedad premium', 3500.00, 1, 'arroz-economia.jpg'),
+('Aceite Vegetal 900ml', 'Aceite de girasol, enriquecido con vitamina A', 7800.00, 1, 'aceite-economia.jpg'),
+
+-- Products for TechSolutions SAS (COMP002 - Technology)
+('Portátil Empresarial', 'Core i5, 8GB RAM, SSD 256GB, Windows 11 Pro', 2450000.00, 13, 'portatil-techsol.jpg'),
+('Router WiFi 6', 'Doble banda, cobertura 150m², 8 antenas', 389900.00, 13, 'router-techsol.jpg'),
+
+-- Products for Farmacia La Salud (COMP003 - Pharmacy)
+('Paracetamol 500mg', 'Caja con 10 tabletas, alivia dolor y fiebre', 4500.00, 22, 'paracetamol-salud.jpg'),
+('Jabón Antibacterial', 'Jabón líquido con triclosán, 500ml', 12500.00, 22, 'jabon-salud.jpg'),
+
+-- Products for Moda Elegante (COMP004 - Clothing)
+('Blusa de Seda', 'Blusa elegante 100% seda, varios colores', 89900.00, 2, 'blusa-moda.jpg'),
+('Zapatos de Cuero', 'Zapatos formales para hombre, color negro', 129900.00, 2, 'zapatos-moda.jpg'),
+
+-- Services for Constructora Andina (COMP005 - Construction)
+('Paquete Remodelación Baño', 'Incluye mano de obra y materiales básicos', 3500000.00, 11, 'remodelacion-andina.jpg'),
+('Consultoría Arquitectónica', 'Sesión de 2 horas con arquitecto certificado', 250000.00, 11, 'consultoria-andina.jpg'),
+
+-- Products for Supermercado El Ahorro (COMP006 - Supermarket)
+('Leche Entera 1L', 'Leche UHT, fortificada con vitaminas', 3200.00, 24, 'leche-ahorro.jpg'),
+('Huevos x30 Unidades', 'Huevos frescos tipo AA', 12500.00, 24, 'huevos-ahorro.jpg'),
+
+-- Services for Academia Digital (COMP007 - Education)
+('Curso Marketing Digital', '4 semanas, certificación incluida', 299000.00, 18, 'curso-marketing.jpg'),
+('Taller Photoshop Básico', '8 horas presenciales, materiales incluidos', 159000.00, 18, 'taller-photoshop.jpg'),
+
+-- Products for Muebles Caribe (COMP008 - Furniture)
+('Sofá 3 Plazas', 'Tela resistente, estructura en madera', 1250000.00, 4, 'sofa-caribe.jpg'),
+('Mesa de Centro', 'Madera de caoba, 120x60cm', 459000.00, 4, 'mesa-caribe.jpg'),
+
+-- Services for Distribuidora Atlántico (COMP009 - Wholesale)
+('Caja Mixta Verduras', '10kg de vegetales frescos de temporada', 85000.00, 19, 'verduras-atlantico.jpg'),
+('Lote Bebidas x24 Unid', 'Variedad de gaseosas y jugos', 68900.00, 19, 'bebidas-atlantico.jpg'),
+
+-- Services for Hotel Playa Blanca (COMP010 - Tourism)
+('Noche Habitación VIP', 'Incluye desayuno buffet y acceso a piscina', 350000.00, 17, 'habitacion-playa.jpg'),
+('Paquete Luna de Miel', '3 noches con cena romántica y spa', 1890000.00, 17, 'lunademiel-playa.jpg'),
+
+-- Products for Pesca y Mariscos SA (COMP011 - Seafood)
+('Filete de Róbalo', 'Filete fresco, empacado al vacío x500g', 28900.00, 1, 'robalo-pesca.jpg'),
+('Camarón XL x1kg', 'Camarón fresco del Caribe, tamaño extra', 45900.00, 1, 'camaron-pesca.jpg');
+
+
+
+INSERT INTO favorites (customer_id, company_id) VALUES
+-- Customer 1 (María González) favorites
+(1, 'COMP001'),  -- Almacén La Economía
+(1, 'COMP003'),  -- Farmacia La Salud
+(1, 'COMP006'),  -- Supermercado El Ahorro
+
+-- Customer 2 (Carlos Rodríguez) favorites
+(2, 'COMP002'),  -- TechSolutions SAS
+(2, 'COMP008'),  -- Muebles Caribe
+
+-- Customer 3 (Ana Martínez) favorites
+(3, 'COMP004'),  -- Moda Elegante
+(3, 'COMP007'),  -- Academia Digital
+
+-- Customer 4 (Jorge Ramírez) favorites
+(4, 'COMP005'),  -- Constructora Andina
+(4, 'COMP009'),  -- Distribuidora Atlántico
+
+-- Customer 5 (Laura Sánchez) favorites
+(5, 'COMP010'),  -- Hotel Playa Blanca
+(5, 'COMP011'),  -- Pesca y Mariscos SA
+
+-- Customer 6 (David López) favorites
+(6, 'COMP001'),  -- Almacén La Economía
+(6, 'COMP002'),  -- TechSolutions SAS
+(6, 'COMP003'),  -- Farmacia La Salud
+
+-- Customer 7 (Sofía Pérez) favorites
+(7, 'COMP004'),  -- Moda Elegante
+(7, 'COMP007'),  -- Academia Digital
+
+-- Customer 8 (Pedro Gómez) favorites
+(8, 'COMP005'),  -- Constructora Andina
+(8, 'COMP008'),  -- Muebles Caribe
+
+-- Customer 9 (Luisa Díaz) favorites
+(9, 'COMP006'),  -- Supermercado El Ahorro
+(9, 'COMP009'),  -- Distribuidora Atlántico
+
+-- Customer 10 (Andrés Herrera) favorites
+(10, 'COMP010'), -- Hotel Playa Blanca
+(10, 'COMP011'); -- Pesca y Mariscos SA
+
+INSERT INTO details_favorites (id, favorite_id, product_id) VALUES
+-- María González's favorites
+(1, 1, 1),   -- Favorite COMP001 (Almacén), Product: Arroz Superior
+(2, 1, 2),   -- Favorite COMP001, Product: Aceite Vegetal
+(3, 2, 5),   -- Favorite COMP003 (Farmacia), Product: Paracetamol
+
+-- Carlos Rodríguez's favorites
+(4, 4, 3),   -- Favorite COMP002 (TechSolutions), Product: Portátil
+(5, 5, 15),  -- Favorite COMP008 (Muebles), Product: Sofá
+
+-- Ana Martínez's favorites
+(6, 6, 7),   -- Favorite COMP004 (Moda), Product: Blusa
+(7, 7, 13),  -- Favorite COMP007 (Academia), Product: Curso Marketing
+
+-- Jorge Ramírez's favorites
+(8, 8, 9),   -- Favorite COMP005 (Constructora), Product: Remodelación
+(9, 9, 17),  -- Favorite COMP009 (Distribuidora), Product: Verduras
+
+-- Laura Sánchez's favorites
+(10, 10, 19), -- Favorite COMP010 (Hotel), Product: Habitación VIP
+(11, 11, 21), -- Favorite COMP011 (Pesca), Product: Filete de Róbalo
+
+-- David López's favorites
+(12, 12, 1),  -- Favorite COMP001, Product: Arroz
+(13, 13, 4),  -- Favorite COMP002, Product: Router
+(14, 14, 6),  -- Favorite COMP003, Product: Jabón
+
+-- Sofía Pérez's favorites
+(15, 15, 8),  -- Favorite COMP004, Product: Zapatos
+(16, 16, 14), -- Favorite COMP007, Product: Taller Photoshop
+
+-- Pedro Gómez's favorites
+(17, 17, 10), -- Favorite COMP005, Product: Consultoría
+(18, 18, 16), -- Favorite COMP008, Product: Mesa
+
+-- Luisa Díaz's favorites
+(19, 19, 12), -- Favorite COMP006, Product: Huevos
+(20, 20, 18), -- Favorite COMP009, Product: Bebidas
+
+-- Andrés Herrera's favorites
+(21, 21, 20), -- Favorite COMP010, Product: Paquete Luna de Miel
+(22, 22, 22); -- Favorite COMP011, Product: Camarón
+
+INSERT INTO polls (name, description, isactive, categorypoll_id) VALUES
+('Satisfacción General', 'Encuesta sobre experiencia general con nuestros productos', TRUE, 1),
+('Calidad de Productos Alimenticios', 'Evaluación de calidad en productos de supermercado', TRUE, 1),
+('Servicio Técnico', 'Opinión sobre atención de soporte técnico', FALSE, 3),
+('Experiencia de Compra Online', 'Feedback sobre proceso de compra electrónico', TRUE, 13),
+('Preferencias de Moda', 'Encuesta sobre tendencias de vestuario actuales', TRUE, 2),
+('Servicio al Cliente', 'Evaluación de atención en puntos de venta', TRUE, 24),
+('Calidad de Productos Electrónicos', 'Opinión sobre durabilidad de dispositivos', FALSE, 3),
+('Interés en Cursos Digitales', 'Encuesta sobre temas de interés para capacitación', TRUE, 18),
+('Experiencia en Restaurantes', 'Feedback sobre servicio en establecimientos', TRUE, 23),
+('Preferencias de Viaje', 'Encuesta sobre hábitos de viaje y alojamiento', FALSE, 17),
+('Uso de Medicamentos', 'Estudio sobre consumo de productos farmacéuticos', TRUE, 22),
+('Opinión sobre Muebles', 'Evaluación de calidad y diseño de mobiliario', TRUE, 4),
+('Hábitos de Lectura', 'Encuesta sobre preferencias literarias', FALSE, 8),
+('Satisfacción con Servicios Financieros', 'Opinión sobre productos bancarios', TRUE, 25),
+('Preferencias de Belleza', 'Encuesta sobre productos de cuidado personal', TRUE, 5);
+
+INSERT INTO quality_products (product_id, customer_id, poll_id, company_id, daterating, rating) VALUES
+-- Ratings for Almacén La Economía (COMP001)
+(1, 1, 1, 'COMP001', '2023-05-10 14:30:00', 4.5),  -- Arroz (General Satisfaction)
+(2, 3, 2, 'COMP001', '2023-05-11 09:15:00', 3.8),  -- Aceite (Food Quality)
+
+-- Ratings for TechSolutions SAS (COMP002)
+(3, 2, 3, 'COMP002', '2023-05-12 16:45:00', 4.2),  -- Laptop (Tech Support)
+(4, 6, 7, 'COMP002', '2023-05-13 11:20:00', 4.7),  -- Router (Electronics Quality)
+
+-- Ratings for Farmacia La Salud (COMP003)
+(5, 1, 11, 'COMP003', '2023-05-14 08:30:00', 4.0), -- Paracetamol (Medication Use)
+(6, 6, 1, 'COMP003', '2023-05-15 13:10:00', 4.3),  -- Jabón (General Satisfaction)
+
+-- Ratings for Moda Elegante (COMP004)
+(7, 3, 5, 'COMP004', '2023-05-16 15:25:00', 4.8),  -- Blusa (Fashion Preferences)
+(8, 7, 5, 'COMP004', '2023-05-17 10:40:00', 3.9),  -- Zapatos (Fashion Preferences)
+
+-- Ratings for Supermercado El Ahorro (COMP006)
+(11, 6, 2, 'COMP006', '2023-05-18 12:00:00', 4.1), -- Leche (Food Quality)
+(12, 9, 1, 'COMP006', '2023-05-19 17:30:00', 3.5), -- Huevos (General Satisfaction)
+
+-- Ratings for Academia Digital (COMP007)
+(13, 3, 8, 'COMP007', '2023-05-20 14:15:00', 4.9), -- Curso (Course Interest)
+(14, 7, 8, 'COMP007', '2023-05-21 09:50:00', 4.4), -- Taller (Course Interest)
+
+-- Ratings for Hotel Playa Blanca (COMP010)
+(19, 5, 9, 'COMP010', '2023-05-22 18:20:00', 4.6), -- Habitación (Restaurant Exp)
+(20, 10, 10, 'COMP010', '2023-05-23 08:10:00', 5.0), -- Paquete (Travel Preferences)
+
+-- Ratings for Pesca y Mariscos SA (COMP011)
+(21, 5, 1, 'COMP011', '2023-05-24 12:45:00', 4.2), -- Filete (General Satisfaction)
+(22, 10, 9, 'COMP011', '2023-05-25 16:30:00', 4.7); -- Camarón (Restaurant Exp)
+
+INSERT INTO memberships (name, description) VALUES
+('Básico', 'Acceso a descuentos básicos y promociones ocasionales'),
+('Estándar', 'Descuentos regulares y acceso prioritario a ofertas'),
+('Premium', 'Beneficios exclusivos, envío gratis y asistencia personalizada'),
+('Oro', 'Acceso VIP a eventos, descuentos mayores y beneficios especiales'),
+('Platino', 'Máximos beneficios incluyendo regalos exclusivos y servicio 24/7'),
+('Empresarial', 'Plan diseñado para negocios con múltiples usuarios'),
+('Estudiante', 'Descuentos especiales para estudiantes con identificación válida'),
+('Senior', 'Beneficios adaptados para adultos mayores'),
+('Institucional', 'Para organizaciones educativas y gubernamentales'),
+('Temporal', 'Promoción especial por tiempo limitado con beneficios básicos'),
+('Digital', 'Acceso exclusivo a contenido y servicios en línea'),
+('Familiar', 'Plan grupal para familias con hasta 5 miembros'),
+('Élite', 'Experiencia premium con acceso a eventos exclusivos y asesor dedicado'),
+('Startup', 'Paquete especial para emprendedores y nuevas empresas'),
+('Corporativo', 'Solución integral para grandes empresas con múltiples sucursales');
+
+INSERT INTO periods (name) VALUES
+('1 Mes'),
+('3 Meses'),
+('6 Meses'),
+('1 Año'),
+('2 Años'),
+('Semanal'),
+('Quincenal'),
+('Trimestral'),
+('Semestral'),
+('Bianual'),
+('Personalizado'),
+('Promocional 30 Días'),
+('Temporada Alta'),
+('Temporada Baja'),
+('Evento Especial');
+
+INSERT INTO membershipperiods (membership_id, period_id, price) VALUES
+-- Básico Membership Options
+(1, 1, 19900.00),   -- 1 Mes
+(1, 3, 49900.00),   -- 6 Meses (17% descuento)
+(1, 4, 89900.00),   -- 1 Año (25% descuento)
+
+-- Estándar Membership Options
+(2, 1, 34900.00),   -- 1 Mes
+(2, 2, 89900.00),   -- 3 Meses (14% descuento)
+(2, 4, 159900.00),  -- 1 Año (24% descuento)
+
+-- Premium Membership Options
+(3, 1, 59900.00),   -- 1 Mes
+(3, 3, 299900.00),  -- 6 Meses (17% descuento)
+(3, 4, 499900.00),  -- 1 Año (30% descuento)
+
+-- Oro Membership Options
+(4, 1, 89900.00),   -- 1 Mes
+(4, 4, 799900.00),  -- 1 Año (26% descuento)
+(4, 5, 1399900.00), -- 2 Años (30% descuento)
+
+-- Platino Membership Options
+(5, 4, 999900.00),  -- 1 Año
+(5, 5, 1799900.00), -- 2 Años (10% descuento)
+
+-- Empresarial Membership Options
+(6, 4, 399900.00),  -- 1 Año (por usuario)
+(6, 5, 699900.00), -- 2 Años (por usuario)
+
+-- Estudiante Membership Options
+(7, 1, 9900.00),    -- 1 Mes
+(7, 4, 79900.00),   -- 1 Año (33% descuento)
+
+-- Senior Membership Options
+(8, 1, 14900.00),   -- 1 Mes
+(8, 4, 129900.00),  -- 1 Año (27% descuento)
+
+-- Familiar Membership Options
+(12, 4, 259900.00), -- 1 Año (para hasta 5 miembros)
+(12, 5, 459900.00), -- 2 Años (para hasta 5 miembros)
+
+-- Digital Membership Options
+(11, 1, 12900.00),  -- 1 Mes
+(11, 4, 99900.00);  -- 1 Año (35% descuento)
+
+
+INSERT INTO benefits (description, detail) VALUES
+('Descuento del 10%', 'Aplicable a todos los productos y servicios, excluyendo promociones'),
+('Envío gratuito', 'Envío estándar sin costo en todos los pedidos'),
+('Acceso prioritario', 'Acceso exclusivo a nuevos productos y lanzamientos'),
+('Regalo de cumpleaños', 'Producto o servicio especial en el mes de cumpleaños'),
+('Asesor personal', 'Asignación de un ejecutivo de cuenta dedicado'),
+('Devoluciones extendidas', 'Período de devolución de 60 días en lugar de 30'),
+('Acceso VIP a eventos', 'Invitaciones a eventos exclusivos para miembros'),
+('Estacionamiento preferencial', 'Espacios reservados en locales físicos'),
+('Programa de recompensas', 'Puntos canjeables por productos o servicios'),
+('Garantía extendida', 'Ampliación de garantía de productos al doble del tiempo'),
+('Contenido exclusivo', 'Acceso a tutoriales, guías y materiales premium'),
+('Soporte prioritario', 'Atención al cliente en línea directa sin esperas'),
+('Clases gratuitas', 'Acceso a talleres y capacitaciones mensuales'),
+('Muestras gratis', 'Envío periódico de muestras de nuevos productos'),
+('Descuento en combos', '20% adicional en paquetes y combos especiales'),
+('Reserva anticipada', 'Posibilidad de reservar productos antes del lanzamiento'),
+('Estadía gratis', 'Noche de cortesía en hoteles para miembros premium'),
+('Upgrade gratuito', 'Mejora de categoría en servicios contratados'),
+('Cashback 5%', 'Reembolso del 5% en compras acumulables'),
+('Asistencia en viaje', 'Servicio de emergencia y asistencia durante viajes'),
+('Sin cargos por servicio', 'Exención de cargos administrativos'),
+('Acceso a lounges', 'Uso de salas VIP en aeropuertos y centros'),
+('Talleres exclusivos', 'Eventos de capacitación solo para miembros'),
+('Chequeo gratuito', 'Evaluación técnica o profesional sin costo'),
+('Día de spa gratis', 'Jornada de relajación anual para miembros premium');
+
+
+INSERT INTO membershipbenefits (membership_id, period_id, audience_id, benefit_id) VALUES
+-- Básico Membership (1) - 1 Month (1) - General Audience (1)
+(1, 1, 1, 1),   -- 10% discount
+(1, 1, 1, 2),   -- Free shipping
+
+-- Básico Membership (1) - 1 Year (4) - General Audience (1)
+(1, 4, 1, 1),   -- 10% discount
+(1, 4, 1, 2),   -- Free shipping
+(1, 4, 1, 9),   -- Rewards program
+
+-- Estándar Membership (2) - 1 Month (1) - Adults (5)
+(2, 1, 5, 1),   -- 10% discount
+(2, 1, 5, 2),   -- Free shipping
+(2, 1, 5, 3),   -- Priority access
+
+-- Estándar Membership (2) - 1 Year (4) - Adults (5)
+(2, 4, 5, 1),   -- 10% discount
+(2, 4, 5, 2),   -- Free shipping
+(2, 4, 5, 3),   -- Priority access
+(2, 4, 5, 4),   -- Birthday gift
+(2, 4, 5, 9),   -- Rewards program
+
+-- Premium Membership (3) - 1 Month (1) - Professionals (11)
+(3, 1, 11, 1),  -- 10% discount
+(3, 1, 11, 2),  -- Free shipping
+(3, 1, 11, 3),  -- Priority access
+(3, 1, 11, 5),  -- Personal advisor
+
+-- Premium Membership (3) - 1 Year (4) - Professionals (11)
+(3, 4, 11, 1),  -- 10% discount
+(3, 4, 11, 2),  -- Free shipping
+(3, 4, 11, 3),  -- Priority access
+(3, 4, 11, 4),  -- Birthday gift
+(3, 4, 11, 5),  -- Personal advisor
+(3, 4, 11, 7),  -- VIP events
+(3, 4, 11, 10), -- Extended warranty
+
+-- Oro Membership (4) - 1 Year (4) - Business Owners (12)
+(4, 4, 12, 1),  -- 10% discount
+(4, 4, 12, 2),  -- Free shipping
+(4, 4, 12, 5),  -- Personal advisor
+(4, 4, 12, 7),  -- VIP events
+(4, 4, 12, 17), -- Free hotel stay
+(4, 4, 12, 19), -- 5% cashback
+
+-- Platino Membership (5) - 1 Year (4) - Corporate (26)
+(5, 4, 26, 1),  -- 10% discount
+(5, 4, 26, 2),  -- Free shipping
+(5, 4, 26, 5),  -- Personal advisor
+(5, 4, 26, 7),  -- VIP events
+(5, 4, 26, 17), -- Free hotel stay
+(5, 4, 26, 19), -- 5% cashback
+(5, 4, 26, 22), -- Lounge access
+(5, 4, 26, 25), -- Free spa day
+
+-- Estudiante Membership (7) - 1 Year (4) - Students (13)
+(7, 4, 13, 1),  -- 10% discount
+(7, 4, 13, 2),  -- Free shipping
+(7, 4, 13, 13), -- Free classes
+
+-- Familiar Membership (12) - 1 Year (4) - Families (10)
+(12, 4, 10, 1), -- 10% discount
+(12, 4, 10, 2), -- Free shipping
+(12, 4, 10, 4), -- Birthday gift
+(12, 4, 10, 15),-- Combo discounts
+(12, 4, 10, 24);-- Free checkup
+
+
+INSERT INTO audiencebenefits (audience_id, benefit_id) VALUES
+-- General Public (1)
+(1, 1),   -- 10% discount
+(1, 2),   -- Free shipping
+(1, 9),   -- Rewards program
+
+-- Children (3)
+(3, 4),   -- Birthday gift
+(3, 14),  -- Free samples
+(3, 16),  -- Early reservation
+
+-- Students (13)
+(13, 1),  -- 10% discount
+(13, 12), -- Priority support
+(13, 13), -- Free classes
+(13, 21), -- No service fees
+
+-- Professionals (11)
+(11, 5),  -- Personal advisor
+(11, 7),  -- VIP events
+(11, 19), -- 5% cashback
+(11, 22), -- Lounge access
+
+-- Families (10)
+(10, 4),  -- Birthday gift
+(10, 15), -- Combo discounts
+(10, 24), -- Free checkup
+
+-- Business Owners (12)
+(12, 5),  -- Personal advisor
+(12, 17), -- Free hotel stay
+(12, 19), -- 5% cashback
+(12, 23), -- Exclusive workshops
+
+-- Seniors (17)
+(17, 6),  -- Extended returns
+(17, 8),  -- Preferred parking
+(17, 24), -- Free checkup
+
+-- Pets (18)
+(18, 4),  -- Birthday gift
+(18, 14), -- Free samples
+
+-- Tourists (21)
+(21, 2),  -- Free shipping
+(21, 17), -- Free hotel stay
+(21, 20), -- Travel assistance
+
+-- Fitness Enthusiasts (14)
+(14, 13), -- Free classes
+(14, 24), -- Free checkup
+(14, 25); -- Free spa day
+
+
+INSERT INTO categories_polls (name) VALUES
+('Satisfacción del Cliente'),
+('Calidad de Producto'),
+('Experiencia de Servicio'),
+('Preferencias de Compra'),
+('Lealtad a la Marca'),
+('Servicio Postventa'),
+('Percepción de Valor'),
+('Usabilidad y Diseño'),
+('Contenido Digital'),
+('Eventos y Experiencias'),
+('Servicio al Cliente'),
+('Innovación y Mejoras'),
+('Sostenibilidad'),
+('Accesibilidad'),
+('Entrega y Logística'),
+('Precios y Promociones'),
+('Variedad de Productos'),
+('Recomendación a Otros'),
+('Comparación con Competencia'),
+('Feedback de Empleados'),
+('Impacto Social'),
+('Tecnología y Plataformas'),
+('Comunicación Corporativa'),
+('Programas de Fidelización'),
+('Políticas de Devolución');
+
+
+INSERT INTO rates (customer_id, company_id, poll_id, daterating, rating) VALUES
+-- Ratings for Almacén La Economía (COMP001)
+(1, 'COMP001', 1, '2023-06-15 09:30:00', 4.2),  -- Satisfacción General
+(3, 'COMP001', 2, '2023-06-16 14:15:00', 4.5),  -- Calidad Alimentos
+
+-- Ratings for TechSolutions SAS (COMP002)
+(2, 'COMP002', 3, '2023-06-17 11:20:00', 4.8),  -- Servicio Técnico
+(6, 'COMP002', 7, '2023-06-18 16:45:00', 4.3),  -- Calidad Electrónicos
+
+-- Ratings for Farmacia La Salud (COMP003)
+(1, 'COMP003', 11, '2023-06-19 08:30:00', 4.6), -- Uso Medicamentos
+(6, 'COMP003', 1, '2023-06-20 13:10:00', 4.1),  -- Satisfacción General
+
+-- Ratings for Moda Elegante (COMP004)
+(3, 'COMP004', 5, '2023-06-21 15:25:00', 4.7),  -- Preferencias Moda
+(7, 'COMP004', 5, '2023-06-22 10:40:00', 3.9),  -- Preferencias Moda
+
+-- Ratings for Supermercado El Ahorro (COMP006)
+(6, 'COMP006', 2, '2023-06-23 12:00:00', 4.0),  -- Calidad Alimentos
+(9, 'COMP006', 1, '2023-06-24 17:30:00', 3.8),  -- Satisfacción General
+
+-- Ratings for Academia Digital (COMP007)
+(3, 'COMP007', 8, '2023-06-25 14:15:00', 4.9),  -- Interés Cursos
+(7, 'COMP007', 8, '2023-06-26 09:50:00', 4.4),  -- Interés Cursos
+
+-- Ratings for Hotel Playa Blanca (COMP010)
+(5, 'COMP010', 9, '2023-06-27 18:20:00', 4.5),  -- Experiencia Restaurante
+(10, 'COMP010', 10, '2023-06-28 08:10:00', 5.0), -- Preferencias Viaje
+
+-- Ratings for Pesca y Mariscos SA (COMP011)
+(5, 'COMP011', 1, '2023-06-29 12:45:00', 4.3),  -- Satisfacción General
+(10, 'COMP011', 9, '2023-06-30 16:30:00', 4.6); -- Experiencia Restaurante
+
+
+INSERT INTO customer_memberships (customer_id, membership_id, start_date, end_date, isactive) VALUES
+-- Active memberships
+(1, 1, '2023-01-15', '2023-07-15', TRUE),    -- María González (Básico)
+(2, 3, '2023-03-01', '2024-03-01', TRUE),    -- Carlos Rodríguez (Premium)
+(3, 2, '2023-02-10', '2023-08-10', TRUE),    -- Ana Martínez (Estándar)
+(5, 4, '2023-04-20', '2024-04-20', TRUE),    -- Laura Sánchez (Oro)
+(7, 7, '2023-05-05', '2024-05-05', TRUE),    -- Sofía Pérez (Estudiante)
+
+-- Expired memberships
+(4, 1, '2022-11-01', '2023-05-01', FALSE),   -- Jorge Ramírez (Básico)
+(6, 2, '2022-12-15', '2023-06-15', FALSE),   -- David López (Estándar)
+
+-- Recently upgraded memberships
+(8, 3, '2023-06-01', '2023-12-01', TRUE),    -- Pedro Gómez (Premium)
+(9, 12, '2023-04-10', '2024-04-10', TRUE),   -- Luisa Díaz (Familiar)
+(10, 5, '2023-01-10', '2025-01-10', TRUE),   -- Andrés Herrera (Platino)
+
+-- Trial memberships
+(1, 10, '2023-06-01', '2023-07-01', TRUE),  -- María González (Temporal)
+(4, 10, '2023-06-15', '2023-07-15', TRUE);  -- Jorge Ramírez (Temporal)
+
+
+INSERT INTO resumen_calificaciones (empresa_id, mes, año, promedio_calificacion, total_calificaciones, fecha_generacion) VALUES
+-- Almacén La Economía (COMP001)
+('COMP001', 1, 2023, 4.25, 42, '2023-02-01 00:05:00'),
+('COMP001', 2, 2023, 4.30, 38, '2023-03-01 00:05:00'),
+('COMP001', 3, 2023, 4.18, 45, '2023-04-01 00:05:00'),
+
+-- TechSolutions SAS (COMP002)
+('COMP002', 1, 2023, 4.65, 28, '2023-02-01 00:10:00'),
+('COMP002', 2, 2023, 4.72, 31, '2023-03-01 00:10:00'),
+('COMP002', 3, 2023, 4.68, 29, '2023-04-01 00:10:00'),
+
+-- Farmacia La Salud (COMP003)
+('COMP003', 1, 2023, 4.42, 35, '2023-02-01 00:15:00'),
+('COMP003', 2, 2023, 4.38, 32, '2023-03-01 00:15:00'),
+('COMP003', 3, 2023, 4.50, 37, '2023-04-01 00:15:00'),
+
+-- Moda Elegante (COMP004)
+('COMP004', 1, 2023, 4.15, 27, '2023-02-01 00:20:00'),
+('COMP004', 2, 2023, 4.28, 24, '2023-03-01 00:20:00'),
+('COMP004', 3, 2023, 4.20, 26, '2023-04-01 00:20:00'),
+
+-- Supermercado El Ahorro (COMP006)
+('COMP006', 1, 2023, 4.05, 58, '2023-02-01 00:25:00'),
+('COMP006', 2, 2023, 4.12, 62, '2023-03-01 00:25:00'),
+('COMP006', 3, 2023, 4.08, 55, '2023-04-01 00:25:00'),
+
+-- Academia Digital (COMP007)
+('COMP007', 1, 2023, 4.75, 18, '2023-02-01 00:30:00'),
+('COMP007', 2, 2023, 4.82, 21, '2023-03-01 00:30:00'),
+('COMP007', 3, 2023, 4.78, 19, '2023-04-01 00:30:00'),
+
+-- Hotel Playa Blanca (COMP010)
+('COMP010', 1, 2023, 4.88, 15, '2023-02-01 00:35:00'),
+('COMP010', 2, 2023, 4.92, 17, '2023-03-01 00:35:00'),
+('COMP010', 3, 2023, 4.85, 14, '2023-04-01 00:35:00');
+

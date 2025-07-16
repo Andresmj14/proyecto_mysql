@@ -20,7 +20,7 @@ CREATE TABLE stateregions (
     code3166 VARCHAR(10) UNIQUE,
     subdivision_id INT(11),
     FOREIGN KEY (country_id) REFERENCES countries(isocode),
-    FOREIGN KEY (subdivision_id) REFERENCES subdivisioncategories(id)
+    FOREIGN KEY (subdivision_id) REFERENCES subdivisioncategories(id) 
 );
 
 CREATE TABLE citiesormunicipalities (
